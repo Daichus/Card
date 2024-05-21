@@ -13,11 +13,11 @@ public class Car {
         this.color = color;
     }
 
-    public String getEngineID() {
+    public String getEngineId() {
         return engineID;
     }
 
-    public String getCarID() {
+    public String getCarId() {
         return carID;
     }
 
