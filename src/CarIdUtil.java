@@ -66,4 +66,8 @@ public  class CarIdUtil {
         return (char) (idGenerator.nextInt(10) + '0');
     }
 
+    public static String generateColor() {
+        return new String[]{"White","Black","Blue"}[idGenerator.nextInt(3)];
+    }
+
 }

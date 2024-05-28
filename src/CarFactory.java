@@ -1,4 +1,3 @@
-import java.util.Random;
 public class CarFactory {
   private int numOfCars;
 
@@ -12,7 +11,7 @@ public class CarFactory {
     //產生汽車物件前，將已生產汽車數量加1
     addNumOfCars();
     //返回一個汽車物件，隨機選擇一個顏色
-    return new Car(carId,engineId, new String[]{"White", "Black", "Blue"}[new Random().nextInt(3)]);
+    return new Car(carId,engineId, CarIdUtil.generateColor());
   }
 
   //修改汽車ID
